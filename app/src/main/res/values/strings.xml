@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShoppingRight</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="AjouterPrixArticleActivity">Ajouter Prix Article Activity</string>
+    <string name="AjouterPrixCategorieActivity">Ajouter Prix Categorie Activity</string>
+    <string name="ConsulterPrixActivity">Consulter Prix Activity</string>
+    <string name="ImporterActivity">Importer Activity</string>
+    <string name="ExporterActivity">Exporter Activity</string>
+    <string name="ListesAchatsActivity">Listes Achats Activity</string>
+    <string name="ImporterButtonText">Importer</string>
+    <string name="ExporterButtonText">Exporter</string>
+    <string name="AjouterPrixCategorieButtonText">Ajouter un prix</string>
+    <string name="ConsulerPrixButtonText">Consulter les prix</string>
+    <string name="ListsAchatButtonText">Listes des achats</string>
+
+</resources>
