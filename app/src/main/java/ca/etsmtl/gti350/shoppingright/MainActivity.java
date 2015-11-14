@@ -1,6 +1,7 @@
 package ca.etsmtl.gti350.shoppingright;
 
 import android.app.Activity;
+import android.app.TabActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.widget.Button;
 import java.lang.String;
+import java.util.ArrayList;
+
 import android.content.Intent;
 
 public class MainActivity extends Activity {
@@ -17,6 +20,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
     }
 
     @Override

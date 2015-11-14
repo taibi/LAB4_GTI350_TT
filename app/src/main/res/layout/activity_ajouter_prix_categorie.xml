@@ -63,7 +63,6 @@
         android:layout_below="@+id/relativeLayout"
         android:layout_centerHorizontal="true"
         android:spinnerMode="dropdown"
-        android:entries="@array/categoriesList"
 
 
         />
