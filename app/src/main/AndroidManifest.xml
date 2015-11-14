@@ -48,6 +48,10 @@
             android:label="@string/ImporterActivity" >
         </activity>
 
+        <activity
+            android:name=".AjouterCategorieActivity"
+            android:label="@string/AjouterCategorieActivity" >
+        </activity>
 
     </application>
 

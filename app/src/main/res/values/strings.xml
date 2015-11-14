@@ -4,16 +4,35 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="AjouterPrixArticleActivity">Ajouter Prix Article Activity</string>
-    <string name="AjouterPrixCategorieActivity">Ajouter Prix Categorie Activity</string>
-    <string name="ConsulterPrixActivity">Consulter Prix Activity</string>
-    <string name="ImporterActivity">Importer Activity</string>
-    <string name="ExporterActivity">Exporter Activity</string>
-    <string name="ListesAchatsActivity">Listes Achats Activity</string>
+    <string name="AjouterPrixArticleActivity">Ajouter Prix Article</string>
+    <string name="AjouterPrixCategorieActivity">Ajouter Prix Categorie</string>
+    <string name="ConsulterPrixActivity">Consulter Prix</string>
+    <string name="ImporterActivity">Importer </string>
+    <string name="ExporterActivity">Exporter </string>
+    <string name="ListesAchatsActivity">Listes Achats</string>
     <string name="ImporterButtonText">Importer</string>
     <string name="ExporterButtonText">Exporter</string>
     <string name="AjouterPrixCategorieButtonText">Ajouter un prix</string>
     <string name="ConsulerPrixButtonText">Consulter les prix</string>
     <string name="ListsAchatButtonText">Listes des achats</string>
+    <string name="AjouterCategorieActivity">Ajouter Categorie</string>
+    <string-array name="magasinsList">
+        <item>metro</item>
+        <item>lagoria</item>
+        <item>maxi</item>
+        <item>depaneur du jour</item>
+        <item>iga</item>
+
+    </string-array>
+    <string-array name="categoriesList">
+        <item>Fruits et légumes</item>
+        <item>Viandes</item>
+        <item>Boissons</item>
+        <item>Pains</item>
+        <item>Autres</item>
+
+    </string-array>
+
+
 
 </resources>
