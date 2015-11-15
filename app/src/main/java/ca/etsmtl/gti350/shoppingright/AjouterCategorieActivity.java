@@ -14,21 +14,22 @@ import android.widget.EditText;
 public class AjouterCategorieActivity extends Activity
 
 {
-
+    String categorie_text;
+    ShoppingRightDataBaseAdapter shoppingRightDataBaseAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_ajouter_categorie);
 
-
+        shoppingRightDataBaseAdapter = new ShoppingRightDataBaseAdapter(this);
 
     }
 
 
     public void ouvrirFenetre(View v){
 
-        String categorie_text;
+
         categorie_text = ((EditText) findViewById(R.id.editText)).getText().toString();
         String button_text;
         button_text  = ((Button) v).getText().toString();
@@ -39,15 +40,27 @@ public class AjouterCategorieActivity extends Activity
         if (button_text.equals("Ajouter la catégorie"))
 
         {
-            AjouterPrixCategorieActivity.addItemListCategories(categorie_text);
-            intent = new Intent(this, AjouterPrixArticleActivity.class);
-            startActivity(intent);
+            long id = shoppingRightDataBaseAdapter.insertDataCategorie(categorie_text);
+            if (id < 0 ){
+                Message.message(this,"Unsuccessful");
+
+
+            }
+            else{
+                //Message.message(this,"Successful");
+
+                AjouterPrixCategorieActivity.addItemListCategories(categorie_text);
+                intent = new Intent(this, AjouterPrixArticleActivity.class);
+                startActivity(intent);
+            }
+
+
+
         }
 
 
 
     }
-
 
 
 

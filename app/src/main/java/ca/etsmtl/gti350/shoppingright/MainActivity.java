@@ -1,7 +1,7 @@
 package ca.etsmtl.gti350.shoppingright;
 
 import android.app.Activity;
-import android.app.TabActivity;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -9,19 +9,19 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.widget.Button;
 import java.lang.String;
-import java.util.ArrayList;
 
 import android.content.Intent;
 
 public class MainActivity extends Activity {
 
-
+    ShoppingRightDataBaseAdapter shoppingrighelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+       shoppingrighelper = new ShoppingRightDataBaseAdapter(this);
+       SQLiteDatabase sqLiteDatabase = shoppingrighelper.getHelper().getWritableDatabase();
 
 
     }

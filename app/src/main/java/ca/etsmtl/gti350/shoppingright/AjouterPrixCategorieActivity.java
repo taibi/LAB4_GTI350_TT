@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class AjouterPrixCategorieActivity extends Activity{
     private Spinner spinner;
-
+    ShoppingRightDataBaseAdapter shoppingRightDataBaseAdapter;
     public  ArrayList<String> getListCategories() {
         return listCategories;
     }
@@ -55,7 +55,7 @@ public class AjouterPrixCategorieActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        shoppingRightDataBaseAdapter = new ShoppingRightDataBaseAdapter(this);
 
         setContentView(R.layout.activity_ajouter_prix_categorie);
         addItemOnSpinner2();
@@ -67,17 +67,19 @@ public class AjouterPrixCategorieActivity extends Activity{
 
     public void addItemOnSpinner2()
     {
-        String[] tab = getResources().getStringArray(R.array.categoriesList);
+       //String[] tab = getResources().getStringArray(R.array.categoriesList);
+      //  String[] tab =
+
        spinner = (Spinner) findViewById(R.id.spinner2);
-        for(int i=0;i<tab.length;i++)
-        {
-            if(listCategories.contains(tab[i]) == false) {
-                listCategories.add(tab[i]);
-            }
+       // for(int i=0;i<tab.length;i++)
+       // {
+        //    if(listCategories.contains(tab[i]) == false) {
+          //      listCategories.add(tab[i]);
+         //   }
 
-        }
+      //  }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,getArrayCategories());
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,viewAllCategories());
         spinner.setAdapter(adapter);
 
     }
@@ -106,6 +108,12 @@ public class AjouterPrixCategorieActivity extends Activity{
 
 
 
+    public  String[] viewAllCategories(){
+
+        return shoppingRightDataBaseAdapter.getAllCategories();
+       //Message.message(this,data);
+
+    }
 
 
 
