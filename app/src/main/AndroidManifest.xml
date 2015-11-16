@@ -52,6 +52,10 @@
             android:name=".AjouterCategorieActivity"
             android:label="@string/AjouterCategorieActivity" >
         </activity>
+        <activity
+            android:name=".AjouterMagasinActivity"
+            android:label="@string/AjouterMagasinActivity" >
+        </activity>
 
     </application>
 

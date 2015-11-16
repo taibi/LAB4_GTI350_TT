@@ -27,7 +27,7 @@ public class AjouterCategorieActivity extends Activity
     }
 
 
-    public void ouvrirFenetre(View v){
+    public void ouvrirFentre(View v){
 
 
         categorie_text = ((EditText) findViewById(R.id.editText)).getText().toString();
@@ -37,15 +37,11 @@ public class AjouterCategorieActivity extends Activity
         Intent intent ;
 
 
-        if (button_text.equals("Ajouter la catégorie"))
+        if (button_text.equals("Ajouter la categorie"))
 
         {
             long id = shoppingRightDataBaseAdapter.insertDataCategorie(categorie_text);
-            if (id < 0 ){
-                Message.message(this,"Unsuccessful");
-
-
-            }
+            if (id < 0 ) Message.message(this, "Unsuccessful");
             else{
                 //Message.message(this,"Successful");
 

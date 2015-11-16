@@ -96,22 +96,31 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
+        android:id="@+id/spinner2"
+        android:spinnerMode="dropdown"
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:entries="@array/magasinsList"
-        android:spinnerMode="dropdown"
-        />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ajouter"
+        android:text="Ajouter article"
         android:id="@+id/button8"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="ouvrirFenetre"
 
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nouveau magasin"
+        android:id="@+id/button10"
+        android:onClick="ouvrirFenetre"
+
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

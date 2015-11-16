@@ -16,6 +16,8 @@
     <string name="ConsulerPrixButtonText">Consulter les prix</string>
     <string name="ListsAchatButtonText">Listes des achats</string>
     <string name="AjouterCategorieActivity">Ajouter Categorie</string>
+    <string name="AjouterMagasinActivity">Ajouter Magasin Activity</string>
+
     <string-array name="magasinsList">
         <item>metro</item>
         <item>lagoria</item>

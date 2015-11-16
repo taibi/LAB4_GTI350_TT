@@ -16,6 +16,7 @@ import java.util.ArrayList;
  */
 public class AjouterPrixCategorieActivity extends Activity{
     private Spinner spinner;
+    public static ArrayList<String> listCategories = new ArrayList<String>();
     ShoppingRightDataBaseAdapter shoppingRightDataBaseAdapter;
     public  ArrayList<String> getListCategories() {
         return listCategories;
@@ -38,16 +39,6 @@ public class AjouterPrixCategorieActivity extends Activity{
     {
         listCategories.remove(item);
     }
-    public static ArrayList<String> listCategories = new ArrayList<String>();
-
-
-
-
-
-
-
-
-
 
 
 
